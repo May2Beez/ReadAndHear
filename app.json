@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "CompleteBookReader",
-    "slug": "CompleteBookReader",
-    "version": "1.0.0",
+    "name": "Read & Hear",
+    "slug": "ReadAndHear",
+    "description": "Read & Hear - E-Book Reader with Audiobook Player",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -24,10 +25,28 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.may2bee.ReadAndHear",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4d7bf049-d6b6-4254-87b1-7d6ec78a5150"
+      }
+    },
+    "plugins": [
+      [
+        "expo-file-system"
+      ]
+    ]
   }
 }
